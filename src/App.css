@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+/* header part for all tha pages */
+.header{
+  display: flex;
+  align-items: center;
+  padding: 1em 2em;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px #00000066;
+  background-color:aquamarine;
+  width: 100%;
+  position: relative;
+  
+  
+}
+/* Almabetter Logo Height and Width*/
+.Mylogo >img
+{
+  height: 30px;
+  width: 100px;
+}
+  
+/* Link sizes*/
+.Links {
+  font-family: 'Lexend', sans-serif;
+  display: flex;
+  gap: 1.5em;
+  font-size: 18px;
+  font-weight: 500;
+  
+}
+
+/*Link Color Define */
+.link{
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+/* Link Color when Mouse pointerr on the link*/
+.link:hover,
+.link:active{
+  color: #f02d3a;
+}
+
+
+#icon{
+  cursor: pointer;
+  font-size: 24px;
+}
+
+
+#mobile{
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+
+  #mobile{
+    display: block;
+
+  }
+  .Links{
+
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5em;
+    position: absolute;
+    gap: 2em;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    transition: 0.5s;
+    
+    z-index: 1500;
+  }
+  .active{
+    display: flex;
+    right: 0;
+    
+  }
+  
+}
+
+
+.current{
+  color:#000000;
+}
+
+.isActive{
+  color:#f02d3a;
+}
